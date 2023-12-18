@@ -1,0 +1,156 @@
+header{
+    display: grid;
+    grid-area: header;
+    grid-template-columns: minmax(200px, 400px) minmax(200px, 800px) minmax(200px, 400px);
+    background-color: #313131;
+    height: 80px;
+}
+
+body{
+    margin: 0;
+}
+
+.pokemon-card {
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Prompt', sans-serif;
+    border-bottom: 2px solid white;
+    font-size: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #ebe5e5;
+    border: 1px solid #ccc;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Prompt', sans-serif;
+    border-radius: 10px;
+}
+
+#buttonModal{
+    width: 20%;
+    height: 50%;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 #ee0e0e;
+    color: #666;
+    margin-right: 1rem;
+    text-decoration: none;
+    transition: all .2s linear;
+    border: currentColor;
+    font-family: 'Prompt', sans-serif;
+    margin-top: 1rem;
+}
+
+#buttonModal:hover{
+    background-color: #ee0e0e;
+    transition: all .3s;
+}
+
+#pokedex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#pokedex {
+    background-color: #9c9c9c;
+}
+
+img{
+    background-color: #ebe5e5;
+    border: 1px;
+    border-radius: 15px;
+    box-shadow: black 0px 0px 3px 0px;
+}
+
+#descripcion1 {
+    margin-top: 5px;
+}
+
+#logo {
+    height: 60px;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#logoPokemon {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#logoPokedex {
+    height: 35px;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#buscador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contBuscador {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 60%;
+    margin-top: 0.65rem;
+}
+
+#busqueda {
+    height: 28px;
+    display: block;
+    background: transparent;
+    border: 1px solid transparent;
+    border-bottom: 2px solid white;
+    color: white;
+    margin-bottom: 8px;
+    outline: none;
+    margin-top: 5px;
+    font-family: 'Prompt', sans-serif;
+}
+
+#texto {
+    position: absolute;
+    font-size: 15px;
+    left: 0.7rem;
+    top: -10px;
+    padding: 2px 4px;
+    margin: 0;
+    color: white;
+    z-index: 1;
+    font-family: 'Prompt', sans-serif;
+}
+
+#botonBusqueda {
+    width: 8%;
+    height: 50%;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 #ee0e0e;
+    color: #666;
+    margin-right: 1rem;
+    text-decoration: none;
+    transition: all .2s linear;
+    border: currentColor;
+}
+
+#botonBusqueda:hover{
+    background-color: #ee0e0e;
+    transition: all .3s;
+}
+

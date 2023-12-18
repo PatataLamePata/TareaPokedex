@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="/assets/CSS/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans&family=Prompt&display=swap" rel="stylesheet">
+</head>
+
+<header> 
+    <div id="logoPokemon">
+        <img src="/assets/IMGS/Poké_Ball_icon.svg.png" id="logo">
+        <img src="/assets/IMGS/AYutZOF.png" id="logoPokedex">
+    </div>
+    <div id="buscador">
+        <div id="contBuscador">
+            <label for="busqueda" id="texto">Buscar:</label>
+            <input type="text" id="busqueda">
+        </div>
+        <button onclick="filtrarPokedex()" id="botonBusqueda"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg></button>
+    </div>
+</header>
+
+<body>
+    <div id="pokedex">
+        <div id="pokedex-container"></div>
+        <div id="modal-container" class="modal"></div>
+    </div>
+    <script src="/JS/index.js"></script> 
+</body>
+</html>
